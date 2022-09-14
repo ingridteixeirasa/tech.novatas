@@ -1,38 +1,71 @@
-<!DOCTYPE html> <!--Document Type Definition (DTD) / 
-    Não pode ter caracter antes dele, nem quebra de linha.-->
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"> <!--Unicode Transformation Format-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Pode ser apagada-->>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Informação de responsividade-->
-    <meta name="author" content="Ingrid Teixeira">
-    <title>Página da Ingrid</title>
-</head> <!--Não colocar nada visível / leva informações para os robôs-->
-<!--Shift+alt+f -> identa o código-->
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
-    Menu Principal
 
-    <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="contatos.html">Contatos</a></li>
-        <li><a href="sobre.html"> Sobre</a></li>
-    </ul>
-
-
-    Estou com fome.
+    <img src="https://picsum.photos/200/300" alt="Imagens aleatórias.">
     <br>
-    Estou com sede.
-    <hr>
-    <img src="https://picsum.photos/200/300" alt="Imagem aleatória">
-    <hr>
+    <!--Tags de bloco - block-->
+    Texto <hr> Mais texto
+    <div>Div é a tag de bloco mais usada</div>
+    <p>Isso é um parágrafo</p>
+        <!--Títulos - também são tags de bloco-->
+        <h1>Título mais importante</h1>
+        <h2>Título mais importante</h2>
+        <h3>Título mais importante</h3>
+        <h4>Título mais importante</h4>
+        <h5>Título mais importante</h5>
+        <h6>Título mais importante</h6>
 
-    <p> Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum <em>Lorem Ipsum</em>Lorem IpsumLorem Ipsum<strong>Lorem Ipsum</strong>
+        <!--Listas não ordenadas-->
+        <ul type="square">
+            <li>Item 1</li>
+            <li>Item 3</li>
+            <ul>
+                <li>Sub item</li>
+            </ul>
+            <li>Item 2</li>
+        </ul>   
+        
+          <!--Listas ordenadas-->
+          <ol type="I">
+            <li>Item 1</li>
+            <li>Item 3</li>
+            <li>Item 2</li>
+        </ol>    
+        <!--Tags semânticas de bloco-->
+        <header>Cabeçalho</header>
+        <nav>Menu de Navegação</nav>
+        <footer>Rodapé</footer>
 
-    </p>
+    <!--Tags em linha - inline-->
+    Texto <strong><em>loooooooooooooooooooooogo</em></strong>
+    <img src="https://picsum.photos/200/300" alt="Imagens aleatórias.">
+    Isso é um <a href="https://www.uva.br/wp-content/uploads/2022/03/ANA%CC%81LISE-E-DESENVOLVIMENTO-DE-SISTEMA-Atualizac%CC%A7a%CC%83o-das-Matrizes-dos-Cursos-2.pdf">link.</a>
+        <span style="font-size: 40px;">Essa tag não faz nada.</span>
+    <!--Tabelas-->
+    <table border="2">
+        <tr>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+        </tr>
+        <tr>
+            <td>Célula 1 linha 1</td>
+            <td>Célula 2 linha 1</td>
+        </tr>
+        <tr>
+            <td>Célula 1 linha 2</td>
+            <td>Célula 2 linha 2</td>
+        </tr>
+        <tr>
+            <td colspan="2">Uma só</td>
+        </tr>
+    </table>
 
-    <a href="https://catabits.com.br" target="_blank"> Site do Professor</a>
-    <hr>
-    <input type="text" value="Ingrid">
 </body>
 </html>
