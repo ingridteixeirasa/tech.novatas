@@ -42,7 +42,7 @@ a {
 /* Quando o mouse passar sobre */
 a:hover {
     color: orangered;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Fundo do site */
@@ -245,8 +245,6 @@ body {
     font-size: .1px;
 }
 
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
-}
+#fbottom i[class~=fa-facebook] {
+    color: #1877f2;
+ }

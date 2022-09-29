@@ -22,7 +22,7 @@
 function runApp() {
 
     // Carrega a página inicial:
-    loadPage('home');
+    loadPage('contacts');
 
     /**
      * jQuery → Quando houver click em um elemento <a>, execute o aplicativo 
@@ -94,7 +94,7 @@ function loadPage(href) {
      * Gera os links para as partes da página:
      * "page" é um objeto do JavaScript.
      * Referências:
-     * 
+     *     • w3schools.com/js/js_objects.asp
      **/
     var page = {
         "html": `/pages/${href}/index.html`,
@@ -102,19 +102,22 @@ function loadPage(href) {
         "js": `/pages/${href}/script.js`
     }
 
-    // Obtém o arquivo "index.html" da página:
+    // jQuery → Obtém o arquivo "index.html" da página:
     $.get(page.html, function (content) {
 
-        // Carrega o CSS da página no <head> de "/index.html":
+        // jQuery → Carrega o CSS da página no <head> de "/index.html":
         $('#pageCSS').attr('href', page.css);
 
-        // Mostra o HTML dentro de <main> em "/index.html":
+        // jQuery → Mostra o HTML dentro de <main> em "/index.html":
         $('#content').html(content);
 
-        // Executa o JavaScript da página:
+        // jQuery → Executa o JavaScript da página:
         $.getScript(page.js);
 
     });
+
+    // Atualiza endereço da página no navegador:
+    // window.history.pushState({}, '', href);
 }
 
 /**
@@ -125,13 +128,13 @@ function getTitle(title = '') {
     // Se a variável "title" está vazia (não que usar um título)...
     if (title == '') {
 
-        // O título vai ter o formato "nomeSite .:. sloganSite":
+        // jQuery → O título vai ter o formato "nomeSite .:. sloganSite":
         $('title').html(`Tech.Novatas .:. Toda mulher é capaz de tudo, inclusive programar.`);
 
         // Se "title" tem um valor diferente de '':
     } else {
 
-        // O título va ter o formato "nomeSite .:. nomePagina":
+        // jQuery → O título va ter o formato "nomeSite .:. nomePagina":
         $('title').html(`Tech.Novatas .:. ${title}`);
 
     }
