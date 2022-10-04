@@ -1,71 +1,183 @@
-<!DOCTYPE html>
+<!-- Início do documento HTML -->
 <html lang="pt-br">
+
+<!-- Cabeçalho com metadados do documento -->
+
 <head>
+
+    <!-- Carrega a tabela de caracteres universal -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Deixa a página responsiva -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Carrega a folha de estilos do aplicativo -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Carrega o CSS específico da página que está sendo acessada -->
+    <link rel="stylesheet" href="" id="pageCSS">
+
+    <!-- 
+        Carrega a biblioteca de ícones "Font Awesome" à partir do CDNJS.
+        Para saber mais sobre a Font Awesome, acesse o link:
+        https://fontawesome.com/docs
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Ícone dos favoritos -->
+    <link rel="shortcut icon" href="/img/favicon.png">
+
+    <!-- Título do documento -->
+    <title>Tech.Novatas</title>
+
 </head>
+
 <body>
 
-    <img src="https://picsum.photos/200/300" alt="Imagens aleatórias.">
-    <br>
-    <!--Tags de bloco - block-->
-    Texto <hr> Mais texto
-    <div>Div é a tag de bloco mais usada</div>
-    <p>Isso é um parágrafo</p>
-        <!--Títulos - também são tags de bloco-->
-        <h1>Título mais importante</h1>
-        <h2>Título mais importante</h2>
-        <h3>Título mais importante</h3>
-        <h4>Título mais importante</h4>
-        <h5>Título mais importante</h5>
-        <h6>Título mais importante</h6>
+    <!-- Âncora de retorno -->
+    <a id="top"></a>
 
-        <!--Listas não ordenadas-->
-        <ul type="square">
-            <li>Item 1</li>
-            <li>Item 3</li>
-            <ul>
-                <li>Sub item</li>
-            </ul>
-            <li>Item 2</li>
-        </ul>   
-        
-          <!--Listas ordenadas-->
-          <ol type="I">
-            <li>Item 1</li>
-            <li>Item 3</li>
-            <li>Item 2</li>
-        </ol>    
-        <!--Tags semânticas de bloco-->
-        <header>Cabeçalho</header>
-        <nav>Menu de Navegação</nav>
-        <footer>Rodapé</footer>
+    <!-- Wrap da página -->
+    <div id="wrap">
 
-    <!--Tags em linha - inline-->
-    Texto <strong><em>loooooooooooooooooooooogo</em></strong>
-    <img src="https://picsum.photos/200/300" alt="Imagens aleatórias.">
-    Isso é um <a href="https://www.uva.br/wp-content/uploads/2022/03/ANA%CC%81LISE-E-DESENVOLVIMENTO-DE-SISTEMA-Atualizac%CC%A7a%CC%83o-das-Matrizes-dos-Cursos-2.pdf">link.</a>
-        <span style="font-size: 40px;">Essa tag não faz nada.</span>
-    <!--Tabelas-->
-    <table border="2">
-        <tr>
-            <th>Coluna 1</th>
-            <th>Coluna 2</th>
-        </tr>
-        <tr>
-            <td>Célula 1 linha 1</td>
-            <td>Célula 2 linha 1</td>
-        </tr>
-        <tr>
-            <td>Célula 1 linha 2</td>
-            <td>Célula 2 linha 2</td>
-        </tr>
-        <tr>
-            <td colspan="2">Uma só</td>
-        </tr>
-    </table>
+        <!-- Cabeçalho -->
+        <header>
+
+            <!-- Logotipo usando Font Awesome -->
+            <a href="home" title="Página inicial">
+                <!-- <i class="fa-fw fa-solid fa-laptop-code" title="Logotipo de Tech.Novatas"></i> -->
+                <img src="/img/logo01.png" alt="Logotipo de Tech.Novatas">
+            </a>
+
+            <!-- Nome / slogan do site -->
+            <h1>
+                Tech.Novatas
+                <span>Toda mulher é capaz de tudo, inclusive programar.</span>
+            </h1>
+        </header>
+
+        <!-- Menu principal -->
+        <nav>
+
+            <!-- Item do menu -->
+            <a href="home" title="Página inicial">
+
+                <!-- Ícone do item usando Font Awesome -->
+                <i class="fa-fw fa-solid fa-house-chimney"></i>
+
+                <!-- Etiqueta (label) do item -->
+                <span>Início</span>
+            </a>
+
+            <!-- Próximos itens do menu são similares ao anterior -->
+            <a href="contacts">
+                <i class="fa-fw fa-solid fa-comment-dots"></i>
+                <span>Contatos</span>
+            </a>
+            <a href="about">
+                <i class="fa-fw fa-solid fa-circle-info"></i>
+                <span>Sobre</span>
+            </a>
+            <a href="profile">
+                <i class="fa-fw fa-solid fa-user"></i>
+                <span>Login</span>
+            </a>
+
+        </nav>
+
+        <!-- Conteúdo -->
+        <main id="content"></main>
+
+        <!-- Rodapé -->
+        <footer>
+
+            <div id="ftop">
+
+                <!-- Link para a página inicial -->
+                <a href="home" title="Página inicial">
+                    <i class="fa-fw fa-solid fa-house-chimney"></i>
+                </a>
+
+                <!-- Licença do aplicativo -->
+                <div>&copy; 2022 Tech.Novatas</div>
+
+                <!-- Link para o topo desta página -->
+                <a href="#top">
+                    <i class="fa-fw fa-solid fa-circle-up"></i>
+                </a>
+
+            </div>
+
+            <div id="fbottom">
+
+                <nav>
+                    <h4>Redes sociais:</h4>
+                    <a href="https://facebook.com/Tech.Novatas" target="_blank">
+                        <i class="fa-brands fa-facebook fa-fw"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://youtube.com/Tech.Novatas" target="_blank">
+                        <i class="fa-brands fa-youtube fa-fw"></i>
+                        <span>Youtube</span>
+                    </a>
+                    <a href="https://githu.com/Tech.Novatas" target="_blank">
+                        <i class="fa-brands fa-github fa-fw"></i>
+                        <span>GitHub</span>
+                    </a>
+                </nav>
+
+                <nav>
+
+                    <h4>Links rápidos:</h4>
+                    <a href="contacts">
+                        <i class="fa-fw fa-solid fa-comment-dots"></i>
+                        <span>Contatos</span>
+                    </a>
+                    <a href="about">
+                        <i class="fa-fw fa-solid fa-circle-info"></i>
+                        <span>Sobre</span>
+                    </a>
+                    <a href="policies">
+                        <i class="fa-solid fa-user-lock fa-fw"></i>
+                        <span>Privacidade</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </footer>
+
+        <!-- Rack que aplica margem inferior a <footer> -->
+        <span>&nbsp;</span>
+
+    </div>
+
+    <!-- Mensagem sobre o uso de cookies -->
+    <div id="msgCookies">
+
+        <div class="msg-cookies">
+
+            <div>
+                Nosso site usa cookies para que você tenha uma melhor experiência de navegação e segurança.
+                <button id="accept">Entendi</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 
+        Carrega a boblioteca JavaScript "jQuery" à partir de CDNJS.
+        Para saber mais sobre a jQuery, acesse os links:
+        • https://jquery.com/ → Site oficial
+        • https://www.w3schools.com/jquery/ → Curso completo
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Carrega o JavaScript do aplicativo -->
+    <script src="/script.js"></script>
 
 </body>
+
 </html>
